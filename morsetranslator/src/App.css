@@ -1,9 +1,9 @@
 
 .main-app-light {
   display: flex;
-  justify-content: center;
   flex-direction: column;
   text-align: center;
+  height: 100vh;
 }
 
 .error-message-light {
@@ -14,7 +14,7 @@
 .heading-light {
   font-size: calc(40px + 2vmin);
   font-family: 'Courier New', Courier, monospace;
-  padding-top: 50px;
+  margin-top: 70px;
 }
 
 .input-light {
@@ -30,10 +30,10 @@ input:focus {
 
 .main-app-dark {
   display: flex;
-  justify-content: center;
   flex-direction: column;
   text-align: center;
   background-color: black;
+  height: 100vh;
 }
 
 .error-message-dark {
@@ -44,8 +44,8 @@ input:focus {
 .heading-dark {
   font-size: calc(40px + 2vmin);
   font-family: 'Courier New', Courier, monospace;
-  padding-top: 50px;
   color: antiquewhite;
+  margin-top: 70px;
 }
 
 .input-dark {

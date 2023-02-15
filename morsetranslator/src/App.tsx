@@ -36,7 +36,7 @@ function App() {
         <input className={`input-${mode}`} type="text" onChange={handleChangeInput} />
       </form>
       {error?
-        <label className={`error-message-${mode}`}>Only letters might be entered</label>:""
+        <label className={`error-message-${mode}`}>Enter only letters and spaces</label>:""
         } 
       <Translation searched={searched} mode={mode}/> 
     </div>
