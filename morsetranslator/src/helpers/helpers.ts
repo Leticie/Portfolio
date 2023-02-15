@@ -7,6 +7,15 @@ export const textToMorse = (searched) => {
     chars.forEach(char =>
         translatedText.push(translationKeys[char.toUpperCase()])
     )
-    
+
     return translatedText
-}         
+}
+
+export const lettersOnly = (input, handleErrorChange) => {
+    const letters = /^[A-Za-z]+$/;
+    if (input === "" || letters.test(input)) {
+        handleErrorChange(false)
+    } else {
+        handleErrorChange(true)
+    }
+}
