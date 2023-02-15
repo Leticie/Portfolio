@@ -1,4 +1,7 @@
 .Translation{
     display:flex;
+    justify-content: center;
     flex-direction: row;
+    white-space: pre;
+    text-align: center;
 }

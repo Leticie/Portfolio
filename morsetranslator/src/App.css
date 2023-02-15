@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+.main-app {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.error-message {
+  color : red;
+}
+
+
