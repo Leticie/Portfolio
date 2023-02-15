@@ -2,11 +2,13 @@ import { useState } from "react";
 import { Translation } from "./components/Translation";
 import { lettersOnly } from "./helpers/helpers";
 import "./App.css" 
+import { SwitchButton } from "./components/SwitchButton";
 
 
 function App() {
   const [searched, setSearched] = useState("")
   const [error, setError] = useState(false)
+  const [mode, setMode] = useState("light")
   
   const handleErrorChange = (value) => {
     setError(value)
@@ -17,17 +19,26 @@ function App() {
     setSearched(event.target.value)
   }
 
+  const handleModeChange = () => {
+    if (mode === "light") {
+      setMode("dark")
+    } else {
+      setMode("light")
+    }  
+  }
+
 
   return (
-    <div className="main-app">
-      <h1>Morse Translator</h1>
+    <div className={`main-app-${mode}`}>
+      <SwitchButton mode={mode} handleModeChange={handleModeChange}/>
+      <h1 className={`heading-${mode}`}>Morse Translator</h1>
       <form>
-        <input type="text" onChange={handleChangeInput} />
+        <input className={`input-${mode}`} type="text" onChange={handleChangeInput} />
       </form>
       {error?
-        <label className="error-message">Only letters might be entered</label>:""
+        <label className={`error-message-${mode}`}>Only letters might be entered</label>:""
         } 
-      <Translation searched={searched} /> 
+      <Translation searched={searched} mode={mode}/> 
     </div>
   );
 }

@@ -1,14 +1,12 @@
 import { textToMorse } from "../helpers/helpers"
 import './Translation.css'; 
-interface searchedI { searched:string }
+interface searchedI { searched:string, mode:string}
 
-export const Translation = ({searched}:searchedI) => {
+export const Translation = ({searched, mode}:searchedI) => {
     const morse:Array<string> = textToMorse(searched)
 
-    console.log(morse)
-
     return (
-        <div className="Translation">
+        <div className={`Translation-${mode}`}>
             <p>{morse.join(" | ")}</p>
         </div>
     )

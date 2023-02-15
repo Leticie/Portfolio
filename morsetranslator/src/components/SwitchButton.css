@@ -1,0 +1,12 @@
+.button-light {
+    border-radius: 12px;
+    border-color: black;
+    color: white;
+    background-color: black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.button-dark {
+    border-radius: 12px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}

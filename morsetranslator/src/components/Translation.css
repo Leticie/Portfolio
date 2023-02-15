@@ -1,7 +1,18 @@
-.Translation{
+.Translation-light{
     display:flex;
     justify-content: center;
     flex-direction: row;
     white-space: pre;
     text-align: center;
+    font-size: calc(15px + 2vmin);
+}
+
+.Translation-dark{
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    white-space: pre;
+    text-align: center;
+    font-size: calc(15px + 2vmin);
+    color: antiquewhite;
 }

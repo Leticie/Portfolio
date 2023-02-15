@@ -22,3 +22,12 @@ export const lettersOnly = (input, handleErrorChange) => {
         handleErrorChange(true)
     }
 }
+
+export const buttonText = (mode) => {
+    if (mode ==="dark") {
+        return "light"
+    }
+    return "dark"
+
+}
+
