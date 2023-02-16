@@ -7,8 +7,8 @@ interface SwitchButtonI {
 }
 
 export const SwitchButton = ({ mode, handleModeChange }: SwitchButtonI) => (
-  <div>
-    <button className={`button-${mode}`} onClick={handleModeChange}>
+  <div className="button-container">
+    <button className={`button ${mode}`} onClick={handleModeChange}>
       {buttonText(mode)}
     </button>
   </div>

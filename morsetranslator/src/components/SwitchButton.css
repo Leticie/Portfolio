@@ -1,18 +1,23 @@
-.button-light {
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin: 5px 5px 0 0;
+}
+
+.button {
     border-radius: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+}
+
+.button.light {
     border-color: black;
     color: white;
     background-color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    position: absolute;
-    right: 1%;
-    margin-top: 5px;
 }
 
-.button-dark {
-    border-radius: 12px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    position: absolute;
-    right: 1%;
-    margin-top: 5px;
-}
+.button.dark {
+    border-color: white;
+    color: black;
+    background-color: white;
+}    

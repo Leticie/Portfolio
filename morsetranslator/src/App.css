@@ -1,20 +1,31 @@
 
-.main-app-light {
+.app {
   display: flex;
   flex-direction: column;
   text-align: center;
   height: 100vh;
 }
 
-.error-message {
-  color : red;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+.app.light {
+  background-color: white;
 }
 
-.heading-light {
+.app.dark {
+  background-color: black;
+}
+
+.heading {
   font-size: calc(40px + 2vmin);
   font-family: 'Courier New', Courier, monospace;
   margin-top: 70px;
+}
+
+.heading.light {
+  color: black;
+}
+
+.heading.dark {
+  color: white
 }
 
 .input {
@@ -28,19 +39,11 @@ input:focus {
   background-color: yellow;
 }
 
-.main-app-dark {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  background-color: black;
-  height: 100vh;
+.error-message {
+  color : red;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
 
-.heading-dark {
-  font-size: calc(40px + 2vmin);
-  font-family: 'Courier New', Courier, monospace;
-  color: antiquewhite;
-  margin-top: 70px;
-}
+
 

@@ -10,7 +10,7 @@ export const Translation = ({ searched, mode }: searchedI) => {
   const morse: Array<string> = textToMorse(searched);
 
   return (
-    <div className={`Translation-${mode}`}>
+    <div className={`Translation ${mode}`}>
       <p>{morse.join(" | ")}</p>
     </div>
   );

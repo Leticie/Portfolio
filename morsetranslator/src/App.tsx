@@ -29,9 +29,9 @@ function App() {
 
 
   return (
-    <div className={`main-app-${mode}`}>
+    <div className={`app ${mode}`}>
       <SwitchButton mode={mode} handleModeChange={handleModeChange}/>
-      <h1 className={`heading-${mode}`}>Morse Translator</h1>
+      <h1 className={`heading ${mode}`}>Morse Translator</h1>
       <form>
         <input className={`input`} type="text" onChange={handleChangeInput} />
       </form>
