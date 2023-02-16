@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Translation } from "./components/Translation";
-import { validateInput } from "./helpers/helpers";
+import { validateLettersOnly } from "./helpers/helpers";
 import "./App.css";
 import { ModeSwitchButton } from "./components/ModeSwitchButton";
 
@@ -13,7 +13,7 @@ function App() {
   const handleModeChange = () => mode === "light" ? setMode("dark") : setMode("light");
 
   const handleChangeInput = (event: React.ChangeEvent<HTMLInputElement>) => {
-    validateInput(event.target.value, handleErrorChange);
+    validateLettersOnly(event.target.value, handleErrorChange);
     setInput(event.target.value);
   };
 
