@@ -6,7 +6,7 @@
   height: 100vh;
 }
 
-.error-message-light {
+.error-message {
   color : red;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
@@ -17,7 +17,7 @@
   margin-top: 70px;
 }
 
-.input-light {
+.input {
   font-family: 'Courier New', Courier, monospace;
   box-sizing: border-box;
   border: 3px solid black;
@@ -36,10 +36,6 @@ input:focus {
   height: 100vh;
 }
 
-.error-message-dark {
-  color : red;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
-}
 
 .heading-dark {
   font-size: calc(40px + 2vmin);
@@ -48,9 +44,3 @@ input:focus {
   margin-top: 70px;
 }
 
-.input-dark {
-  font-family: 'Courier New', Courier, monospace;
-  box-sizing: border-box;
-  border: 3px solid black;
-  height: 30px;
-}

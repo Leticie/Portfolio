@@ -3,11 +3,10 @@
     border-color: black;
     color: white;
     background-color: black;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     position: absolute;
     right: 1%;
     margin-top: 5px;
-
 }
 
 .button-dark {

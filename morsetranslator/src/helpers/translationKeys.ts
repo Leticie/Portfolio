@@ -1,5 +1,4 @@
 export const translationKeys = {
-    
     A: ".-",
     B: "-...",
     C: "-.-.",
@@ -25,5 +24,4 @@ export const translationKeys = {
     X: "-..-",
     Y: "-.--",
     Z: "--.."
-   
  }

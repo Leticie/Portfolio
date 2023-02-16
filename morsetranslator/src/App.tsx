@@ -33,10 +33,10 @@ function App() {
       <SwitchButton mode={mode} handleModeChange={handleModeChange}/>
       <h1 className={`heading-${mode}`}>Morse Translator</h1>
       <form>
-        <input className={`input-${mode}`} type="text" onChange={handleChangeInput} />
+        <input className={`input`} type="text" onChange={handleChangeInput} />
       </form>
       {error?
-        <label className={`error-message-${mode}`}>{error}</label>:""
+        <label className={`error-message`}>{error}</label>:""
       } 
       <Translation searched={searched} mode={mode}/> 
     </div>
