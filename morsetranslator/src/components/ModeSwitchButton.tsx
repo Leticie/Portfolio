@@ -1,12 +1,12 @@
 import { buttonText } from "../helpers/helpers";
-import "./SwitchButton.css";
+import "./ModeSwitchButton.css";
 
-interface SwitchButtonI {
+interface ModeSwitchButtonI {
   mode: string;
   handleModeChange: () => void;
 }
 
-export const SwitchButton = ({ mode, handleModeChange }: SwitchButtonI) => (
+export const ModeSwitchButton = ({ mode, handleModeChange }: ModeSwitchButtonI) => (
   <div className="button-container">
     <button className={`button ${mode}`} onClick={handleModeChange}>
       {buttonText(mode)}

@@ -1,44 +1,31 @@
 import { useState } from "react";
 import { Translation } from "./components/Translation";
 import { validateInput } from "./helpers/helpers";
-import "./App.css" 
-import { SwitchButton } from "./components/SwitchButton";
-
+import "./App.css";
+import { ModeSwitchButton } from "./components/ModeSwitchButton";
 
 function App() {
-  const [searched, setSearched] = useState("")
-  const [error, setError] = useState("")
-  const [mode, setMode] = useState("light")
-  
-  const handleErrorChange = (value:string) => {
-    setError(value)
-  }
+  const [input, setInput] = useState("");
+  const [error, setError] = useState("");
+  const [mode, setMode] = useState("light");
+
+  const handleErrorChange = (value: string) => setError(value);
+  const handleModeChange = () => mode === "light" ? setMode("dark") : setMode("light");
 
   const handleChangeInput = (event: React.ChangeEvent<HTMLInputElement>) => {
-    validateInput(event.target.value, handleErrorChange)
-    setSearched(event.target.value)
-  }
-
-  const handleModeChange = () => {
-    if (mode === "light") {
-      setMode("dark")
-    } else {
-      setMode("light")
-    }  
-  }
-
+    validateInput(event.target.value, handleErrorChange);
+    setInput(event.target.value);
+  };
 
   return (
     <div className={`app ${mode}`}>
-      <SwitchButton mode={mode} handleModeChange={handleModeChange}/>
+      <ModeSwitchButton mode={mode} handleModeChange={handleModeChange} />
       <h1 className={`heading ${mode}`}>Morse Translator</h1>
       <form>
         <input className={`input`} type="text" onChange={handleChangeInput} />
       </form>
-      {error?
-        <label className={`error-message`}>{error}</label>:""
-      } 
-      <Translation searched={searched} mode={mode}/> 
+      {error && <label className={`error-message`}>{error}</label>}
+      <Translation input={input} mode={mode} />
     </div>
   );
 }
