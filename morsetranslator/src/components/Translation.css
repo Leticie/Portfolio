@@ -5,6 +5,7 @@
     white-space: pre;
     text-align: center;
     font-size: calc(15px + 2vmin);
+    overflow-x: auto;
 }
 
 .Translation.light{

@@ -1,4 +1,6 @@
 import { translationKeys } from "./translationKeys";
+import { MAX_CHARACTERS } from "../constants/constants";
+import { LETTERS_REGEX } from "../constants/constants";
 
 export const textToMorse = (searched: string) => {
   const chars = searched.split("");
@@ -16,24 +18,20 @@ export const textToMorse = (searched: string) => {
 };
 
 const validateLettersOnly = (input: string) => {
-  const letters = /^[A-Za-z\s]+$/;
-  if (input === "" || letters.test(input)) {
+  if (input === "" || LETTERS_REGEX.test(input)) {
     return true;
   }
   return false;
 };
 
 const validateInputLength = (input: string) => {
-  if (input.length <= 15) {
+  if (input.length <= MAX_CHARACTERS) {
     return true;
   }
   return false;
 };
 
-export const validateInput = (
-  input: string,
-  handleErrorChange: (value: string) => void
-) => {
+export const validateInput = (input: string, handleErrorChange: (value: string) => void) => {
   if (!validateInputLength(input)) {
     handleErrorChange("You have exceeded the maximum number of characters");
   } else if (!validateLettersOnly(input)) {
@@ -43,9 +41,4 @@ export const validateInput = (
   }
 };
 
-export const buttonText = (mode: string) => {
-  if (mode === "dark") {
-    return "light";
-  }
-  return "dark";
-};
+export const buttonText = (mode: string) => mode === "dark" ? "light" : "dark";

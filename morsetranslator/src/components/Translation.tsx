@@ -6,12 +6,8 @@ interface TranslationI {
   mode: string;
 }
 
-export const Translation = ({ input, mode }: TranslationI) => {
-  const morse: Array<string> = textToMorse(input);
-
-  return (
-    <div className={`Translation ${mode}`}>
-      <p>{morse.join(" | ")}</p>
-    </div>
-  );
-};
+export const Translation = ({ input, mode }: TranslationI) => (
+  <div className={`Translation ${mode}`}>
+    <p>{textToMorse(input).join(" | ")}</p>
+  </div>
+);
