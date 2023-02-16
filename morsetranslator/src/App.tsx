@@ -1,21 +1,21 @@
 import { useState } from "react";
 import { Translation } from "./components/Translation";
-import { lettersOnly } from "./helpers/helpers";
+import { validateInput } from "./helpers/helpers";
 import "./App.css" 
 import { SwitchButton } from "./components/SwitchButton";
 
 
 function App() {
   const [searched, setSearched] = useState("")
-  const [error, setError] = useState(false)
+  const [error, setError] = useState("")
   const [mode, setMode] = useState("light")
   
-  const handleErrorChange = (value) => {
+  const handleErrorChange = (value:string) => {
     setError(value)
   }
 
   const handleChangeInput = (event: React.ChangeEvent<HTMLInputElement>) => {
-    lettersOnly(event.target.value, handleErrorChange)
+    validateInput(event.target.value, handleErrorChange)
     setSearched(event.target.value)
   }
 
@@ -36,8 +36,8 @@ function App() {
         <input className={`input-${mode}`} type="text" onChange={handleChangeInput} />
       </form>
       {error?
-        <label className={`error-message-${mode}`}>Enter only letters and spaces</label>:""
-        } 
+        <label className={`error-message-${mode}`}>{error}</label>:""
+      } 
       <Translation searched={searched} mode={mode}/> 
     </div>
   );
