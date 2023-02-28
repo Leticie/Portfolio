@@ -23,7 +23,27 @@ import { ReactComponent as Ghost } from "../assets/typesIcons/ghost.svg";
 import { ReactComponent as Steel } from "../assets/typesIcons/steel.svg";
 import { ReactComponent as Fighting } from "../assets/typesIcons/fighting.svg";
 
-const typeIcons = [Normal, Fighting, Flying, Poison, Ground, Rock, Bug, Ghost, Steel, Fire, Water, Grass, Electric, Psychic, Ice, Dragon, Dark, Fairy];
+
+//svg names change on production, hence used key values pairs to render and assign css
+const typeIcons = {
+  normal: Normal,
+  fighting: Fighting,
+  flying: Flying,
+  poison: Poison,
+  ground: Ground,
+  rock: Rock,
+  bug: Bug,
+  ghost: Ghost,
+  steel: Steel,
+  fire: Fire,
+  water: Water,
+  electric: Electric,
+  psychic: Psychic,
+  ice: Ice,
+  dragon: Dragon,
+  dark: Dark,
+  fairy: Fairy,
+};
 interface PokemonTypeSelectedI {
   handlePokemonInfo: (data: any) => void;
 }
@@ -44,7 +64,7 @@ export const PokemonTypes = ({ handlePokemonInfo }: PokemonTypeSelectedI) => {
       });
   };
 
-console.log(typeIcons)
+  console.log(typeIcons);
   return (
     <>
       {pokemonTypeList ? (
@@ -54,15 +74,15 @@ console.log(typeIcons)
         />
       ) : (
         <div className="logos">
-          {typeIcons.map((Icon: any, index: number) => (
+          {Object.entries(typeIcons).map(([TypeKey, TypeIcon]: any, index) => (
             <div
               onClick={() => {
                 handleClick(index);
               }}
               key={index}
-              className={`image-type ${Icon.render.name}`}
+              className={`image-type ${TypeKey}`}
             >
-              <Icon />
+              <TypeIcon />
             </div>
           ))}
         </div>

@@ -25,75 +25,75 @@
     cursor: pointer;
 }
 
-.image-type.SvgNormal {
+.image-type.normal {
     background-color: grey;
 }
 
-.image-type.SvgFire {
+.image-type.fire {
     background-color: orange;
 }
 
-.image-type.SvgWater {
+.image-type.water {
     background-color: rgb(25, 124, 236);
 }
 
-.image-type.SvgGrass {
+.image-type.grass {
     background-color: green;
 
 }
-.image-type.SvgFlying {
+.image-type.flying {
     background-color: rgb(76, 112, 211);
 }
 
-.image-type.SvgFighting {
+.image-type.fighting {
     background-color: red;
 }
 
-.image-type.SvgPoison {
+.image-type.poison {
     background-color: blueviolet;
 }
 
-.image-type.SvgElectric {
+.image-type.electric {
     background-color: rgb(255, 238, 0)
     ;
 }
 
-.image-type.SvgGround{
+.image-type.ground{
     background-color: brown;
 }
 
-.image-type.SvgRock {
+.image-type.rock {
     background-color: wheat;
 }
 
-.image-type.SvgPsychic {
+.image-type.psychic {
     background-color: rgb(212, 98, 146);
 }
 
-.image-type.SvgIce {
+.image-type.ice {
     background-color: aqua;
 }
 
-.image-type.SvgBug {
+.image-type.bug {
     background-color: greenyellow;
 }
 
-.image-type.SvgGhost {
+.image-type.ghost {
     background-color: rgb(32, 2, 116);
 }
 
-.image-type.SvgSteel {
+.image-type.steel {
     background-color: rgb(20, 87, 87);
 }
 
-.image-type.SvgDragon {
+.image-type.dragon {
     background-color: rgb(1, 86, 134);
 }
 
-.image-type.SvgDark {
+.image-type.dark {
     background-color: rgb(71, 71, 71);
 }
-.image-type.SvgFairy {
+.image-type.fairy {
     background-color: violet;
 }
 
