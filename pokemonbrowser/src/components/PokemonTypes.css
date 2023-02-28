@@ -1,0 +1,99 @@
+
+.logos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 60vw;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.image-type {
+    margin-top: 50px;
+    border-radius: 50%;
+    display: flex;
+    height: 120px;
+    width: 120px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.image-type:hover {
+    box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.image-type.SvgNormal {
+    background-color: grey;
+}
+
+.image-type.SvgFire {
+    background-color: orange;
+}
+
+.image-type.SvgWater {
+    background-color: rgb(25, 124, 236);
+}
+
+.image-type.SvgGrass {
+    background-color: green;
+
+}
+.image-type.SvgFlying {
+    background-color: rgb(76, 112, 211);
+}
+
+.image-type.SvgFighting {
+    background-color: red;
+}
+
+.image-type.SvgPoison {
+    background-color: blueviolet;
+}
+
+.image-type.SvgElectric {
+    background-color: rgb(255, 238, 0)
+    ;
+}
+
+.image-type.SvgGround{
+    background-color: brown;
+}
+
+.image-type.SvgRock {
+    background-color: wheat;
+}
+
+.image-type.SvgPsychic {
+    background-color: rgb(212, 98, 146);
+}
+
+.image-type.SvgIce {
+    background-color: aqua;
+}
+
+.image-type.SvgBug {
+    background-color: greenyellow;
+}
+
+.image-type.SvgGhost {
+    background-color: rgb(32, 2, 116);
+}
+
+.image-type.SvgSteel {
+    background-color: rgb(20, 87, 87);
+}
+
+.image-type.SvgDragon {
+    background-color: rgb(1, 86, 134);
+}
+
+.image-type.SvgDark {
+    background-color: rgb(71, 71, 71);
+}
+.image-type.SvgFairy {
+    background-color: violet;
+}
+
