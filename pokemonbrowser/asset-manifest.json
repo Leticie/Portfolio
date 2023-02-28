@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/pokemonbrowser/static/css/main.524e2223.css",
-    "main.js": "/Portfolio/pokemonbrowser/static/js/main.dc4a2d2d.js",
+    "main.css": "/Portfolio/pokemonbrowser/static/css/main.200ee947.css",
+    "main.js": "/Portfolio/pokemonbrowser/static/js/main.73f61e5a.js",
     "static/js/787.c1607079.chunk.js": "/Portfolio/pokemonbrowser/static/js/787.c1607079.chunk.js",
     "static/media/PokemonSolid.ttf": "/Portfolio/pokemonbrowser/static/media/PokemonSolid.5d60be1f7ff5fcc21fc1.ttf",
     "static/media/pokeball.svg": "/Portfolio/pokemonbrowser/static/media/pokeball.499612a7b5342abac926a67c13deb442.svg",
@@ -22,14 +22,13 @@
     "static/media/dark.svg": "/Portfolio/pokemonbrowser/static/media/dark.e8df6449a933147188354b8d410b635f.svg",
     "static/media/water.svg": "/Portfolio/pokemonbrowser/static/media/water.45ed2ad7596a95ba7d952c5ec238e5a8.svg",
     "static/media/electric.svg": "/Portfolio/pokemonbrowser/static/media/electric.c547fde335cd74e42fbbfd51da4b36e1.svg",
-    "static/media/grass.svg": "/Portfolio/pokemonbrowser/static/media/grass.c0b03a5b7b3a30c2f87565e60c0e4c44.svg",
     "static/media/normal.svg": "/Portfolio/pokemonbrowser/static/media/normal.0ac30a1aed4b3a3290dfda44f850cb22.svg",
-    "main.524e2223.css.map": "/Portfolio/pokemonbrowser/static/css/main.524e2223.css.map",
-    "main.dc4a2d2d.js.map": "/Portfolio/pokemonbrowser/static/js/main.dc4a2d2d.js.map",
+    "main.200ee947.css.map": "/Portfolio/pokemonbrowser/static/css/main.200ee947.css.map",
+    "main.73f61e5a.js.map": "/Portfolio/pokemonbrowser/static/js/main.73f61e5a.js.map",
     "787.c1607079.chunk.js.map": "/Portfolio/pokemonbrowser/static/js/787.c1607079.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.524e2223.css",
-    "static/js/main.dc4a2d2d.js"
+    "static/css/main.200ee947.css",
+    "static/js/main.73f61e5a.js"
   ]
 }
