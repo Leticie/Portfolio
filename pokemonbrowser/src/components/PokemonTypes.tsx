@@ -44,7 +44,7 @@ export const PokemonTypes = ({ handlePokemonInfo }: PokemonTypeSelectedI) => {
       });
   };
 
-
+console.log(typeIcons)
   return (
     <>
       {pokemonTypeList ? (
