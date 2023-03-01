@@ -12,7 +12,7 @@ function App() {
   const [error, setError] = useState("");
 
   const handleInputChange = (event) => {
-    setSearchedPokemon(event.target.value);
+    setSearchedPokemon(event.target.value.toLowerCase());
     setError("");
   };
 
