@@ -36,17 +36,18 @@ export const PokemonTypes = ({ handlePokemonInfo, loading }: PokemonTypeI) => {
           handlePokemonInfo={handlePokemonInfo}
         />
       ) : (
-        <div className="logos">
+        <div className={`logos loading-${loading}`}>
             {Object.entries(typeIcons).map(([TypeKey, TypeIcon]: any, index) => (
-              <div
+              <button
                 onClick={() => {
                   handleClick(index);
                 }}
                 key={index}
-                className={`image-type ${TypeKey} loading-${loading}`}
+                className={`image-type ${TypeKey}`}
+                disabled={loading}
               >
                 <TypeIcon />  
-              </div>  
+              </button>  
             ))} 
         </div>
       )}

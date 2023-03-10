@@ -26,6 +26,11 @@
     cursor: pointer;
 }
 
+.image-type:disabled {
+    cursor: wait;
+    box-shadow: none;
+}
+
 
 .image-type.normal {
     background-color: grey;
