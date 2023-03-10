@@ -7,11 +7,12 @@ import { typeIcons } from "./TypeIcons";
 
 
 
-interface PokemonTypeSelectedI {
+interface PokemonTypeI {
   handlePokemonInfo: (data: any) => void;
+  loading: boolean;
 }
 
-export const PokemonTypes = ({ handlePokemonInfo }: PokemonTypeSelectedI) => {
+export const PokemonTypes = ({ handlePokemonInfo, loading }: PokemonTypeI) => {
   const [pokemonTypeList, setPokemonTypeList] = useState(null);
 
   const handlePokemonTypeList = (list) => setPokemonTypeList(list);
@@ -36,17 +37,17 @@ export const PokemonTypes = ({ handlePokemonInfo }: PokemonTypeSelectedI) => {
         />
       ) : (
         <div className="logos">
-          {Object.entries(typeIcons).map(([TypeKey, TypeIcon]: any, index) => (
-            <div
-              onClick={() => {
-                handleClick(index);
-              }}
-              key={index}
-              className={`image-type ${TypeKey}`}
-            >
-              <TypeIcon />
-            </div>
-          ))}
+            {Object.entries(typeIcons).map(([TypeKey, TypeIcon]: any, index) => (
+              <div
+                onClick={() => {
+                  handleClick(index);
+                }}
+                key={index}
+                className={`image-type ${TypeKey} loading-${loading}`}
+              >
+                <TypeIcon />  
+              </div>  
+            ))} 
         </div>
       )}
     </>

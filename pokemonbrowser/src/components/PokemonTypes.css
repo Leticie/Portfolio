@@ -6,6 +6,7 @@
     max-width: 60vw;
     flex-wrap: wrap;
     justify-content: center;
+
 }
 
 
@@ -24,6 +25,7 @@
     box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.2);
     cursor: pointer;
 }
+
 
 .image-type.normal {
     background-color: grey;
