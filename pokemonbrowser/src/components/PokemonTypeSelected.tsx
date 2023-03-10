@@ -35,7 +35,7 @@ export const PokemonTypeSelected = ({ pokemonTypeList, loading, handlePokemonInf
               handleClickPokeball(pokemon);
             }}
           >
-            <Pokeball className={`pokeball-loading-${loading}`} />
+            <Pokeball className={`pokeball pokeball-loading-${loading}`} />
             <p>{pokemon}</p>
           </div>
         );

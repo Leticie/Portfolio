@@ -59,6 +59,7 @@ function App() {
             <PokemonInfo
               selectedPokemonInfo={selectedPokemonInfo}
               handlePokemonInfo={handlePokemonInfo}
+              loading={loading}
             />
           ) : (
             <PokemonTypes

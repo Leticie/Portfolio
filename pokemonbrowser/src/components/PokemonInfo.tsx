@@ -2,8 +2,14 @@ import "./PokemonInfo.css"
 import { getWeight } from "../helpers/helpers";
 import { getHeight } from "../helpers/helpers";
 
+interface PokemonInfoI {
+  loading: boolean;
+  selectedPokemonInfo: any;
+  handlePokemonInfo: (data: any) => void
+}
 
-export const PokemonInfo = ({ selectedPokemonInfo, handlePokemonInfo }) => (
+
+export const PokemonInfo = ({ selectedPokemonInfo, handlePokemonInfo, loading } : PokemonInfoI) => (
   <>
     <div className="flip-card" >
       <div className="flip-card-inner">
@@ -37,7 +43,7 @@ export const PokemonInfo = ({ selectedPokemonInfo, handlePokemonInfo }) => (
         </div>
       </div>
     </div>
-    <button className="back-button" onClick={() => handlePokemonInfo("")}>Back to main page</button>
+    <button className="back-button" onClick={() => handlePokemonInfo("")} disabled={loading}>Back to main page</button>
   </>
 )  
 
