@@ -5,16 +5,20 @@ import { getPokemonNames } from "../helpers/helpers";
 import { SINGLE_POKEMON_URL } from "../constants/constants";
 interface PokemonTypeSelectedI {
   pokemonTypeList: any;
+  loading: boolean;
   handlePokemonInfo: (data: any) => void;
 }
 
-export const PokemonTypeSelected = ({ pokemonTypeList, handlePokemonInfo }: PokemonTypeSelectedI) => {
+export const PokemonTypeSelected = ({ pokemonTypeList, loading, handlePokemonInfo }: PokemonTypeSelectedI) => {
   const handleClickPokeball = (pokemon: string) => {
+    if (loading) {
+      return null
+    }
     axios
         .get(`${SINGLE_POKEMON_URL}${pokemon}`)
         .then((response) => {
             handlePokemonInfo(response.data);
-        });
+        }); 
   };    
 
   return (
@@ -31,7 +35,7 @@ export const PokemonTypeSelected = ({ pokemonTypeList, handlePokemonInfo }: Poke
               handleClickPokeball(pokemon);
             }}
           >
-            <Pokeball className="pokeball" />
+            <Pokeball className={`pokeball-loading-${loading}`} />
             <p>{pokemon}</p>
           </div>
         );

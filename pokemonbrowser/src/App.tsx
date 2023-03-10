@@ -10,7 +10,7 @@ function App() {
   const [searchedPokemon, setSearchedPokemon] = useState<string>("");
   const [selectedPokemonInfo, setSelectedPokemonInfo] = useState("");
   const [error, setError] = useState("");
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(false);
 
   const handleInputChange = (event) => {
     setSearchedPokemon(event.target.value.toLowerCase());
@@ -18,24 +18,25 @@ function App() {
   };
 
   const handlePokemonInfo = (data) => setSelectedPokemonInfo(data);
-  const handleLoading = (value) => setLoading(value)
+  const handleLoading = (value) => setLoading(value);
 
   const handleClick = (event) => {
     event.preventDefault();
     if (searchedPokemon === "") {
-      return setError("Enter pokemon name or number")
+      return setError("Enter pokemon name or number");
     }
-    handleLoading(true)
-      axios
-        .get(`${SINGLE_POKEMON_URL}${searchedPokemon}`)
-        .then((response) => {
-          handlePokemonInfo(response.data);
-          handleLoading(false)
-        })
-        .catch((e) => {
-          e.response.status === 404 ? setError("Pokemon not found") : setError("Something went wrong");
-          handleLoading(false)
-      });
+    handleLoading(true);
+    axios
+      .get(`${SINGLE_POKEMON_URL}${searchedPokemon}`)
+      .then((response) => {
+        handlePokemonInfo(response.data);
+      })
+      .catch((e) => {
+        e.response.status === 404
+          ? setError("Pokemon not found")
+          : setError("Something went wrong");
+      })
+      .finally(() => handleLoading(false));
   };
 
   return (
@@ -45,7 +46,13 @@ function App() {
         <div className="main-content">
           <form>
             <input onChange={handleInputChange}></input>
-            <button className="button-search" onClick={handleClick} disabled={loading}>Search</button>
+            <button
+              className="button-search"
+              onClick={handleClick}
+              disabled={loading}
+            >
+              Search
+            </button>
           </form>
           <div className="error">{error}</div>
           {selectedPokemonInfo ? (
@@ -54,7 +61,10 @@ function App() {
               handlePokemonInfo={handlePokemonInfo}
             />
           ) : (
-            <PokemonTypes handlePokemonInfo={handlePokemonInfo} loading={loading}/>
+            <PokemonTypes
+              handlePokemonInfo={handlePokemonInfo}
+              loading={loading}
+            />
           )}
         </div>
       </div>

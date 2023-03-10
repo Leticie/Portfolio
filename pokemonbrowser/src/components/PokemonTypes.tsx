@@ -33,6 +33,7 @@ export const PokemonTypes = ({ handlePokemonInfo, loading }: PokemonTypeI) => {
       {pokemonTypeList ? (
         <PokemonTypeSelected
           pokemonTypeList={pokemonTypeList}
+          loading={loading}
           handlePokemonInfo={handlePokemonInfo}
         />
       ) : (
