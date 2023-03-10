@@ -4,7 +4,7 @@ import { PokemonTypes } from "./components/PokemonTypes";
 import { useState } from "react";
 import axios from "axios";
 import { PokemonInfo } from "./components/PokemonInfo";
-import { SINGLE_POKEMON_URL } from "./constants/constants";
+import { SINGLE_POKEMON_URL, STATUS_NOT_FOUND } from "./constants/constants";
 
 function App() {
   const [searchedPokemon, setSearchedPokemon] = useState<string>("");
@@ -32,7 +32,7 @@ function App() {
         handlePokemonInfo(response.data);
       })
       .catch((e) => {
-        e.response.status === 404
+        e.response.status === STATUS_NOT_FOUND
           ? setError("Pokemon not found")
           : setError("Something went wrong");
       })
