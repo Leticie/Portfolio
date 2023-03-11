@@ -1,15 +1,15 @@
-import "./PokemonInfo.css"
+import "./PokemonCard.css"
 import { getWeight } from "../helpers/helpers";
 import { getHeight } from "../helpers/helpers";
 
-interface PokemonInfoI {
+interface PokemonCardI {
   loading: boolean;
   selectedPokemonInfo: any;
   handlePokemonInfo: (data: any) => void
 }
 
 
-export const PokemonInfo = ({ selectedPokemonInfo, handlePokemonInfo, loading } : PokemonInfoI) => (
+export const PokemonCard = ({ selectedPokemonInfo, handlePokemonInfo, loading } : PokemonCardI) => (
   <>
     <div className="flip-card" >
       <div className="flip-card-inner">

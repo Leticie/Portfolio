@@ -3,7 +3,7 @@ import "./fonts/PokemonSolid.ttf";
 import { PokemonTypes } from "./components/PokemonTypes";
 import { useState } from "react";
 import axios from "axios";
-import { PokemonInfo } from "./components/PokemonInfo";
+import { PokemonCard } from "./components/PokemonCard";
 import { SINGLE_POKEMON_URL, STATUS_NOT_FOUND } from "./constants/constants";
 
 function App() {
@@ -56,7 +56,7 @@ function App() {
           </form>
           <div className="error">{error}</div>
           {selectedPokemonInfo ? (
-            <PokemonInfo
+            <PokemonCard
               selectedPokemonInfo={selectedPokemonInfo}
               handlePokemonInfo={handlePokemonInfo}
               loading={loading}
