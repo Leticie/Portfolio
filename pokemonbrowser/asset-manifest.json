@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Portfolio/pokemonbrowser/static/css/main.55e7f737.css",
+    "main.css": "/Portfolio/pokemonbrowser/static/css/main.e2f87bae.css",
     "main.js": "/Portfolio/pokemonbrowser/static/js/main.781799d2.js",
     "static/js/787.c1607079.chunk.js": "/Portfolio/pokemonbrowser/static/js/787.c1607079.chunk.js",
     "static/media/PokemonSolid.ttf": "/Portfolio/pokemonbrowser/static/media/PokemonSolid.5d60be1f7ff5fcc21fc1.ttf",
@@ -24,12 +24,12 @@
     "static/media/electric.svg": "/Portfolio/pokemonbrowser/static/media/electric.c547fde335cd74e42fbbfd51da4b36e1.svg",
     "static/media/grass.svg": "/Portfolio/pokemonbrowser/static/media/grass.c0b03a5b7b3a30c2f87565e60c0e4c44.svg",
     "static/media/normal.svg": "/Portfolio/pokemonbrowser/static/media/normal.0ac30a1aed4b3a3290dfda44f850cb22.svg",
-    "main.55e7f737.css.map": "/Portfolio/pokemonbrowser/static/css/main.55e7f737.css.map",
+    "main.e2f87bae.css.map": "/Portfolio/pokemonbrowser/static/css/main.e2f87bae.css.map",
     "main.781799d2.js.map": "/Portfolio/pokemonbrowser/static/js/main.781799d2.js.map",
     "787.c1607079.chunk.js.map": "/Portfolio/pokemonbrowser/static/js/787.c1607079.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.55e7f737.css",
+    "static/css/main.e2f87bae.css",
     "static/js/main.781799d2.js"
   ]
 }
