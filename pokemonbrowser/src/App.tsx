@@ -1,6 +1,6 @@
 import "./App.css";
 import "./fonts/PokemonSolid.ttf";
-import { PokemonTypes } from "./components/PokemonTypes";
+import { PokemonTypesAll } from "./components/PokemonTypesAll";
 import { useState } from "react";
 import axios from "axios";
 import { PokemonCard } from "./components/PokemonCard";
@@ -62,7 +62,7 @@ function App() {
               loading={loading}
             />
           ) : (
-            <PokemonTypes
+            <PokemonTypesAll
               handlePokemonInfo={handlePokemonInfo}
               loading={loading}
             />

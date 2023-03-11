@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./PokemonTypes.css";
+import "./PokemonTypesAll.css";
 import { PokemonTypeSelected } from "./PokemonTypeSelected";
 import axios from "axios";
 import { POKEMON_TYPE_URL } from "../constants/constants";
@@ -7,12 +7,12 @@ import { typeIcons } from "./TypeIcons";
 
 
 
-interface PokemonTypeI {
+interface PokemonTypesAllI {
   handlePokemonInfo: (data: any) => void;
   loading: boolean;
 }
 
-export const PokemonTypes = ({ handlePokemonInfo, loading }: PokemonTypeI) => {
+export const PokemonTypesAll = ({ handlePokemonInfo, loading }: PokemonTypesAllI) => {
   const [pokemonTypeList, setPokemonTypeList] = useState(null);
 
   const handlePokemonTypeList = (list) => setPokemonTypeList(list);
