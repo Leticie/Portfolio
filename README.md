@@ -8,3 +8,11 @@
 * Validace formulářů
 * Technologie: REST API, Axios, TypeScript, React
 * https://leticie.github.io/Portfolio/pokemonbrowser/
+
+## [BMI Calculator](https://leticie.github.io/Portfolio/bmi/)
+* Vypočítá BMI podle zadané váhy a výšky
+* Umožňuje přepínat mezi imperiálními a metrickými hodnotami
+* Unit testy
+* Validace formulářů
+* Technologie: TypeScript, React, CSS
+* https://leticie.github.io/Portfolio/bmi/
