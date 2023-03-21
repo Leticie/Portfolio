@@ -1,0 +1,16 @@
+.bmi-results {
+    font-weight: bolder;
+    font-size: x-large;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 10px;
+    border: 2px solid black;
+}
+
+.zone-results {
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 0px;
+}

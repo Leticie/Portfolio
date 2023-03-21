@@ -1,0 +1,22 @@
+.metric-button {
+  background-color: rgb(129, 7, 72);
+  color: aliceblue;
+}
+
+.imperial-button {
+  background-color: rgb(199, 151, 176);
+  color: black;
+}
+
+.switch-buttons-box {
+  margin-top: 20px;
+  float: left;
+}
+
+.switch-button {
+  border: none;
+  font-weight: bolder;
+  cursor: pointer;
+  height: 25px;
+  padding-bottom: 0;
+}
