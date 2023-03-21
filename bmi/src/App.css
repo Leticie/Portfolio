@@ -4,13 +4,13 @@
   flex-direction: column;
   background-color: rgb(248, 239, 239);
   color: black;
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
   align-items: center;
 }
 
 .border-main {
   border: 20px solid rgb(82, 7, 47);
-  min-height: 100vh;
   height: 100%;
 }
 
