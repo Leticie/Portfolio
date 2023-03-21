@@ -11,6 +11,9 @@ interface PokemonTypeSelectedI {
 
 export const PokemonTypeSelected = ({ pokemonTypeList, loading, handlePokemonInfo }: PokemonTypeSelectedI) => {
   const handleClickPokeball = (pokemon: string) => {
+    if (loading) {
+      return null
+    }
     axios
         .get(`${SINGLE_POKEMON_URL}${pokemon}`)
         .then((response) => {
@@ -29,14 +32,11 @@ export const PokemonTypeSelected = ({ pokemonTypeList, loading, handlePokemonInf
           <div
             key={pokemon}
             onClick={() => {
-              if (!loading) {
               handleClickPokeball(pokemon);
-              }
             }}
           >
             <Pokeball className={`pokeball pokeball-loading-${loading}`}/>
             <p>{pokemon}</p>
-
           </div>
         );
       })}

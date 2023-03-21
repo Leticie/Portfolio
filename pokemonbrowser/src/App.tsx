@@ -6,6 +6,7 @@ import axios from "axios";
 import { PokemonCard } from "./components/PokemonCard";
 import { SINGLE_POKEMON_URL, STATUS_NOT_FOUND } from "./constants/constants";
 
+
 function App() {
   const [searchedPokemon, setSearchedPokemon] = useState<string>("");
   const [selectedPokemonInfo, setSelectedPokemonInfo] = useState("");
