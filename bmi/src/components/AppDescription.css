@@ -1,6 +1,8 @@
 .description-box {
     background-color: rgb(129, 7, 72);
     padding: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
     color: aliceblue;
     border-radius: 25px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
