@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { AppDecription } from "./components/AppDescription";
+import { AppDescription } from "./components/AppDescription";
 import { ResultsDisplay } from "./components/ResultsDisplay";
 import { METRIC } from "./constants/constants";
 import { SwitchButtons } from "./components/SwitchButtons";
@@ -18,7 +18,7 @@ const App = () => {
     <div className="border-main">
       <div className="main">
         <h1>BMI CALCULATOR</h1>
-        <AppDecription />
+        <AppDescription />
         <div>
           <SwitchButtons setNewMeasurement={setNewMeasurement} />
           <div className={`calculator-box ${newMeasurement}`}>

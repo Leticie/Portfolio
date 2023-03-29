@@ -1,6 +1,6 @@
 import "./AppDescription.css"
 
-export const AppDecription = () => (
+export const AppDescription = () => (
     <div className="description-box-border">
         <div className="description-box">
             <p>
