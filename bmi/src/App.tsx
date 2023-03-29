@@ -32,11 +32,8 @@ const App = () => {
             )}
           </div>
         </div>
-        {error ? (
-          <label className="error">{error}</label>
-        ) : bmi ? (
-          <ResultsDisplay bmi={bmi} />
-        ) : null}
+        {error && <label className="error">{error}</label>}
+        {bmi && <ResultsDisplay bmi={bmi} />}
       </div>
     </div>
   );
